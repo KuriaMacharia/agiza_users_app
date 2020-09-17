@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_place_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="8dp"
+            android:text="Place Name"
+            android:textColor="@color/findme"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txt_type_explore_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_address_explore_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:text="Place Address"
+            android:textColor="@color/findme"
+            app:layout_constraintEnd_toEndOf="@+id/txt_place_item"
+            app:layout_constraintStart_toStartOf="@+id/txt_place_item"
+            app:layout_constraintTop_toBottomOf="@+id/txt_place_item" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout34"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/a_constraint_background_drawable"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_address_explore_item">
+
+            <TextView
+                android:id="@+id/txt_price_explore_item"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="0000"
+                android:textAlignment="textStart"
+                app:layout_constraintBottom_toBottomOf="@+id/textView115"
+                app:layout_constraintStart_toEndOf="@+id/textView115"
+                app:layout_constraintTop_toTopOf="@+id/textView115" />
+
+            <TextView
+                android:id="@+id/textView120"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max (KES)"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_max_price_explore_item"
+                app:layout_constraintStart_toStartOf="@+id/txt_max_price_explore_item"
+                app:layout_constraintTop_toBottomOf="@+id/txt_max_price_explore_item" />
+
+            <TextView
+                android:id="@+id/textView115"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Price (KES)"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_min_price_explore_item"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0000"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+            <TextView
+                android:id="@+id/txt_max_price_explore_item"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="0000"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_min_price_explore_item"
+                app:layout_constraintStart_toEndOf="@+id/txt_min_price_explore_item"
+                app:layout_constraintTop_toTopOf="@+id/txt_min_price_explore_item" />
+
+            <TextView
+                android:id="@+id/textView119"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min (KES)"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_min_price_explore_item"
+                app:layout_constraintStart_toStartOf="@+id/txt_min_price_explore_item"
+                app:layout_constraintTop_toBottomOf="@+id/txt_min_price_explore_item" />
+
+            <TextView
+                android:id="@+id/txt_phone_explore_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="0000000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_price_explore_item"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_phone_explore_item"
+                app:layout_constraintStart_toStartOf="@+id/txt_phone_explore_item"
+                app:layout_constraintTop_toBottomOf="@+id/txt_phone_explore_item" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txt_type_explore_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="16sp"
+            android:paddingEnd="8dp"
+            android:text="Type"
+            android:textColor="@color/greyRed"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_place_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_place_item" />
+
+        <TextView
+            android:id="@+id/txt_id_explore_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

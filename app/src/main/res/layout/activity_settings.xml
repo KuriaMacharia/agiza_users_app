@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/a_faded_blueish_bottom"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:text="Change Theme"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_pressed_menu"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:text="Language/ Lugha:"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/faded_black_light"
+            app:layout_constraintBottom_toBottomOf="@+id/textView34"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <View
+            android:id="@+id/img_gold_theme"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/black_white"
+            app:layout_constraintEnd_toEndOf="@+id/img_white_theme"
+            app:layout_constraintStart_toStartOf="@+id/img_white_theme"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <View
+            android:id="@+id/img_white_theme"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/light_theme"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <Spinner
+            android:id="@+id/spin_language_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:popupTheme="@style/SpinnerTheme"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="@+id/spin_language_home"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/img_blue_theme"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="80dp"
+            android:background="@drawable/black_theme"
+            app:layout_constraintBottom_toBottomOf="@+id/img_white_theme"
+            app:layout_constraintStart_toEndOf="@+id/img_white_theme"
+            app:layout_constraintTop_toTopOf="@+id/img_white_theme"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/faded_bottom_black_light"
+            android:fontFamily="@font/merriweather_regular"
+            android:padding="8dp"
+            android:text="Settings"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/custom_pressed_medical"
+            android:paddingRight="8dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textView79"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back_green_24dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/transparent_button"
+            app:layout_constraintBottom_toBottomOf="@+id/img_home"
+            app:layout_constraintEnd_toEndOf="@+id/img_home"
+            app:layout_constraintStart_toStartOf="@+id/img_home"
+            app:layout_constraintTop_toTopOf="@+id/img_home" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Theme"
+            app:layout_constraintEnd_toEndOf="@+id/img_white_theme"
+            app:layout_constraintStart_toStartOf="@+id/img_white_theme"
+            app:layout_constraintTop_toBottomOf="@+id/img_white_theme" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Theme"
+            app:layout_constraintEnd_toEndOf="@+id/img_blue_theme"
+            app:layout_constraintStart_toStartOf="@+id/img_blue_theme"
+            app:layout_constraintTop_toBottomOf="@+id/img_blue_theme" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black and White"
+            app:layout_constraintEnd_toEndOf="@+id/img_gold_theme"
+            app:layout_constraintStart_toStartOf="@+id/img_gold_theme"
+            app:layout_constraintTop_toBottomOf="@+id/img_gold_theme" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

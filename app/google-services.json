@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "500658507200",
+    "firebase_url": "https://locaterescue-fcef0.firebaseio.com",
+    "project_id": "locaterescue-fcef0",
+    "storage_bucket": "locaterescue-fcef0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500658507200:android:44dde14cfb7a7951",
+        "android_client_info": {
+          "package_name": "com.agiza.center.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500658507200-t02qr6cu3og4ekr9n222en4r670v4jm3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agiza.center.app",
+            "certificate_hash": "aae2cd54bb6646fb3c4f0590b356e877f22a8a8d"
+          }
+        },
+        {
+          "client_id": "500658507200-19eupm7ph2jued67gpr6229mh0en4la7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAINi92wuFvxlANRl4bP9KtfZPf9aOxQsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500658507200-19eupm7ph2jued67gpr6229mh0en4la7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500658507200:android:c91d8949f23481cd",
+        "android_client_info": {
+          "package_name": "com.example.kush.responder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500658507200-40i803dubccagcpl1u24gc6hr0fvqaft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kush.responder",
+            "certificate_hash": "aae2cd54bb6646fb3c4f0590b356e877f22a8a8d"
+          }
+        },
+        {
+          "client_id": "500658507200-19eupm7ph2jued67gpr6229mh0en4la7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAINi92wuFvxlANRl4bP9KtfZPf9aOxQsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500658507200-19eupm7ph2jued67gpr6229mh0en4la7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500658507200:android:6152c3719f6fccc2",
+        "android_client_info": {
+          "package_name": "com.locaterescue.center.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500658507200-j18ivlsc430b7ln9m6gd9cmddi5jau0b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.locaterescue.center.app",
+            "certificate_hash": "aae2cd54bb6646fb3c4f0590b356e877f22a8a8d"
+          }
+        },
+        {
+          "client_id": "500658507200-19eupm7ph2jued67gpr6229mh0en4la7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAINi92wuFvxlANRl4bP9KtfZPf9aOxQsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500658507200-19eupm7ph2jued67gpr6229mh0en4la7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

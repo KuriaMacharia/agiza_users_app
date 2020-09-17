@@ -1,0 +1,26 @@
+package com.agiza.center.app;
+
+import android.content.Intent;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
+public class PartnersActivity extends AppCompatActivity {
+    ImageView homeImg;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        themeUtils.onActivityCreateSetTheme(this);
+        setContentView(R.layout.activity_partners);
+
+        homeImg = (ImageView) findViewById(R.id.img_home);
+        homeImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PartnersActivity.this, HomeActivity.class));
+            }
+        });
+    }
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout22"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/a_constraint_new_white"
+        android:elevation="3dp"
+        android:padding="8dp"
+        android:translationZ="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view28"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:alpha="0.5"
+            android:background="@drawable/b_icon_green_background"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_init_emergency"
+            app:layout_constraintEnd_toEndOf="@+id/txt_init_emergency"
+            app:layout_constraintStart_toStartOf="@+id/txt_init_emergency"
+            app:layout_constraintTop_toTopOf="@+id/txt_init_emergency" />
+
+        <TextView
+            android:id="@+id/txt_init_emergency"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:text="A"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_police_name_police_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/merriweather_regular"
+            android:paddingStart="4dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="Hospital Name"
+            android:textColor="@color/colourFive"
+            app:layout_constraintBottom_toBottomOf="@+id/view28"
+            app:layout_constraintEnd_toStartOf="@+id/imageView48"
+            app:layout_constraintStart_toEndOf="@+id/txt_init_emergency"
+            app:layout_constraintTop_toTopOf="@+id/view28" />
+
+        <TextView
+            android:id="@+id/txt_police_contact_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:text="0700554411"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/txt_police_name_police_list"
+            app:layout_constraintTop_toBottomOf="@+id/txt_police_name_police_list" />
+
+        <TextView
+            android:id="@+id/txt_latitude_police_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_police_contact_list" />
+
+        <TextView
+            android:id="@+id/txt_longitude_police_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_latitude_police_list" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_police_name_police_list"
+            app:srcCompat="@drawable/ic_more_vert_green_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView48"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/a_faded_blueish_bottom"
+            android:padding="3dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView49"
+            app:layout_constraintTop_toTopOf="@+id/txt_police_name_police_list"
+            app:srcCompat="@drawable/ic_call_blue_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView49"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/a_faded_blueish_bottom"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView48"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView48"
+            app:srcCompat="@drawable/ic_location_on_blue_24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colourFive">#2B4AFC</color>
+    <color name="gpsoff">#5391CA</color>
+    <color name="colourFive_divider">#5F80C3FB</color>
+
+    <color name="greyText">#666666</color>
+    <color name="greyWhite">#FFFFFF</color>
+    <color name="greyRed">#FF1F18</color>
+    <color name="errorRed">#FF3B02</color>
+    <color name="findme">#0084FF</color>
+
+    <color name="red">#FE2924</color>
+    <color name="dull_red">#FFCDCD</color>
+    <color name="yellow">#FCF801</color>
+    <color name="green">#24CB4C</color>
+    <color name="black">#000000</color>
+    <color name="orange">#F6F9DF</color>
+    <color name="orange_faded">#82F7FEC5</color>
+
+    <color name="medical_clear">#00FFFFFF</color>
+    <color name="medical_green">#1BD83B</color>
+    <color name="medical_green_light">#9724CB4C</color>
+    <color name="medical_blue">#8780C3FB</color>
+    <color name="faded_blue">#949494</color>
+    <color name="spinner_blue">#397FBF</color>
+    <color name="faded_black">#96000000</color>
+    <color name="faded_black_light">#3B9E9E9E</color>
+    <color name="faded_black_back">#5D5473FC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="search">#E8FFFF</color>
+    <color name="blueish">#D2DEEE</color>
+    <color name="blue">#4277FF</color>
+    <color name="blue_light">#A7BFFE</color>
+    <color name="gold_metallic">#F9CA30</color>
+    <color name="map">#F4F4F4</color>
+    <color name="map_green">#649f39</color>
+    <color name="places_brown">#CFA451</color>
+    <color name="places_white">#F4EEE1</color>
+    <color name="places_dark_brown">#875D24</color>
+
+</resources>

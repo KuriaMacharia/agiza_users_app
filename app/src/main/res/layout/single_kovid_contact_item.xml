@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout22"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_police_name_police_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/merriweather_regular"
+            android:paddingStart="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="4dp"
+            android:text="Hospital Name"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/b_icon_green_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_police_name_police_list"
+            app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+        <TextView
+            android:id="@+id/txt_county_kovid_item"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="County"
+            app:layout_constraintStart_toStartOf="@+id/txt_police_name_police_list"
+            app:layout_constraintTop_toBottomOf="@+id/txt_police_name_police_list" />
+
+        <TextView
+            android:id="@+id/txt_phone_kovid_item"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Phone"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_county_kovid_item"
+            app:layout_constraintStart_toEndOf="@+id/txt_county_kovid_item"
+            app:layout_constraintTop_toTopOf="@+id/txt_county_kovid_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/medical_green_light"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout22"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout22"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout22" />
+</androidx.constraintlayout.widget.ConstraintLayout>

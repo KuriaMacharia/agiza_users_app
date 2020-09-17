@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExploreActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout32"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/places_brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView46"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_home_white_24dp" />
+
+        <TextView
+            android:id="@+id/textView76"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Explore"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_explore_home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/orange_faded"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout32">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cos_search_explore"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/a_neighbor_background"
+            android:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/edt_search"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/orange"
+                android:backgroundTint="@color/clear"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Search"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoCorrect|textAutoComplete|textCapWords"
+                android:paddingStart="8dp"
+                android:paddingEnd="32dp"
+                android:textColor="@color/com_facebook_blue"
+                android:textCursorDrawable="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/img_clear_search"
+                app:layout_constraintStart_toEndOf="@+id/img_search_lib"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <ImageView
+                android:id="@+id/img_search_lib"
+                android:layout_width="42dp"
+                android:layout_height="0dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/ic_search_blue_24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_search"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edt_search" />
+
+            <ImageView
+                android:id="@+id/img_clear_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_clear_black_24dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_search"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edt_search" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_explore_region_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout37">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons_filter_options_explore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect_signup"
+                android:elevation="1dp"
+                android:translationZ="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView103"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Category:"
+                    android:textAlignment="center"
+                    android:textColor="@color/places_dark_brown"
+                    app:layout_constraintEnd_toEndOf="@+id/spin_category_explore_home"
+                    app:layout_constraintStart_toStartOf="@+id/spin_category_explore_home"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spin_category_explore_home"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/a_text_click_color_template"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_count_all_places_explore"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView103" />
+
+                <Spinner
+                    android:id="@+id/spin_type_explore_home"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/a_text_click_color_template"
+                    app:layout_constraintBottom_toBottomOf="@+id/spin_category_explore_home"
+                    app:layout_constraintStart_toEndOf="@+id/spin_category_explore_home"
+                    app:layout_constraintTop_toTopOf="@+id/spin_category_explore_home" />
+
+                <TextView
+                    android:id="@+id/txt_count_all_places_explore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/a_constraint_background_drawable"
+                    android:padding="3dp"
+                    android:text="00"
+                    android:textColor="@color/findme"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/spin_category_explore_home" />
+
+                <TextView
+                    android:id="@+id/textView121"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Type:"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView103"
+                    app:layout_constraintEnd_toEndOf="@+id/spin_type_explore_home"
+                    app:layout_constraintStart_toEndOf="@+id/textView103"
+                    app:layout_constraintTop_toTopOf="@+id/textView103" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ListView
+                android:id="@+id/list_results_explore"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cons_filter_options_explore" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout37"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rect_signup"
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cos_search_explore">
+
+            <TextView
+                android:id="@+id/textView102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="County:"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/spin_county_explore"
+                app:layout_constraintStart_toStartOf="@+id/spin_county_explore"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Region"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/spin_region_explore"
+                app:layout_constraintStart_toStartOf="@+id/spin_region_explore"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spin_county_explore"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/a_text_click_color_template"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
+            <Spinner
+                android:id="@+id/spin_region_explore"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/a_text_click_color_template"
+                app:layout_constraintBottom_toBottomOf="@+id/spin_county_explore"
+                app:layout_constraintStart_toEndOf="@+id/spin_county_explore"
+                app:layout_constraintTop_toTopOf="@+id/spin_county_explore" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout35"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txt_explore"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="5dp"
+            android:text="Explore"
+            android:textAlignment="center"
+            android:textColor="@color/places_dark_brown"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/divider33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_places"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/places_brown"
+            android:paddingStart="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Places"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_explore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider33"
+            app:layout_constraintTop_toTopOf="@+id/txt_explore" />
+
+        <View
+            android:id="@+id/divider33"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/divider37"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_margin="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/places_brown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_explore_my_places_full"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout32">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_explore_my_places"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/orange_faded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons_explore_add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/a_findme_view_background"
+                android:elevation="3dp"
+                android:translationZ="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView47"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_add_white_24dp" />
+
+                <TextView
+                    android:id="@+id/textView104"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Add"
+                    android:textColor="@color/White"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView47"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView47"
+                    app:layout_constraintTop_toTopOf="@+id/imageView47" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ListView
+                android:id="@+id/list_my_places_explore"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_my_places_explore_count" />
+
+            <TextView
+                android:id="@+id/txt_my_places_explore_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:padding="4dp"
+                android:text="My Places"
+                android:textAlignment="center"
+                android:textColor="@color/findme"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_explore_add_business"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:background="@color/orange_faded"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cos_search_explore_add"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/a_neighbor_background"
+                android:elevation="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView105">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/edt_search_add"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/orange"
+                    android:backgroundTint="@color/clear"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter Address"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textAutoCorrect|textAutoComplete|textCapWords"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="32dp"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textCursorDrawable="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/img_clear_search_add"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <requestFocus />
+                </AutoCompleteTextView>
+
+                <ImageView
+                    android:id="@+id/img_clear_search_add"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_clear_black_24dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/edt_search_add"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/edt_search_add" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView105"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="4dp"
+                android:text="Add Place"
+                android:textAlignment="center"
+                android:textColor="@color/findme"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ScrollView
+                android:id="@+id/scroll_explore_add_business"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rect_signup"
+                android:elevation="2dp"
+                android:translationZ="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cos_search_explore_add">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView107"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Category"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/places_dark_brown"
+                        app:layout_constraintStart_toStartOf="@+id/textView106"
+                        app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+                    <TextView
+                        android:id="@+id/txt_addres_explore_add"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/a_constraint_background_drawable"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView112"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView112"
+                        app:layout_constraintTop_toTopOf="@+id/textView112" />
+
+                    <Spinner
+                        android:id="@+id/spin_type_explore_add"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/a_text_click_color_template"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView108"
+                        app:layout_constraintStart_toEndOf="@+id/textView108"
+                        app:layout_constraintTop_toTopOf="@+id/textView108" />
+
+                    <Spinner
+                        android:id="@+id/spin_category_explore_add"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/a_text_click_color_template"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView107"
+                        app:layout_constraintStart_toEndOf="@+id/textView107"
+                        app:layout_constraintTop_toTopOf="@+id/textView107" />
+
+                    <TextView
+                        android:id="@+id/textView114"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="to"
+                        app:layout_constraintBottom_toBottomOf="@+id/edt_min_price_explore_add"
+                        app:layout_constraintStart_toEndOf="@+id/edt_min_price_explore_add" />
+
+                    <EditText
+                        android:id="@+id/edt_price_explore_add"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/places_white"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="4dp"
+                        android:textCursorDrawable="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView110"
+                        app:layout_constraintStart_toEndOf="@+id/textView110"
+                        app:layout_constraintTop_toTopOf="@+id/textView110" />
+
+                    <TextView
+                        android:id="@+id/textView106"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:text="Business Name:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/places_dark_brown"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_addres_explore_add" />
+
+                    <EditText
+                        android:id="@+id/edt_min_price_explore_add"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/places_white"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="4dp"
+                        android:textCursorDrawable="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView111"
+                        app:layout_constraintStart_toEndOf="@+id/textView111"
+                        app:layout_constraintTop_toTopOf="@+id/textView111" />
+
+                    <TextView
+                        android:id="@+id/textView111"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Price Range (Optional), KES:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/places_dark_brown"
+                        app:layout_constraintStart_toStartOf="@+id/textView110"
+                        app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+                    <CheckBox
+                        android:id="@+id/check_terms_explore_add"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:buttonTint="@color/findme"
+                        android:text="I agree to Terms and Conditions"
+                        android:textColor="@color/places_dark_brown"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider35" />
+
+                    <Button
+                        android:id="@+id/btn_add_explore"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/findme"
+                        android:text="ADD"
+                        android:textColor="@color/White"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_cancel_explore"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btn_cancel_explore"
+                        app:layout_constraintTop_toTopOf="@+id/btn_cancel_explore" />
+
+                    <TextView
+                        android:id="@+id/textView110"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:text="Price (Optional), KES:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/places_dark_brown"
+                        app:layout_constraintStart_toStartOf="@+id/textView108"
+                        app:layout_constraintTop_toBottomOf="@+id/group_delivery_explore_add" />
+
+                    <TextView
+                        android:id="@+id/textView108"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Type:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/places_dark_brown"
+                        app:layout_constraintStart_toStartOf="@+id/textView107"
+                        app:layout_constraintTop_toBottomOf="@+id/textView107" />
+
+                    <Button
+                        android:id="@+id/btn_cancel_explore"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/dull_red"
+                        android:text="CANCEL"
+                        android:textColor="@color/red"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_add_explore"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/check_terms_explore_add" />
+
+                    <View
+                        android:id="@+id/divider35"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/colourFive_divider"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView111" />
+
+                    <EditText
+                        android:id="@+id/edt_name_explore_add"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/places_white"
+                        android:ems="10"
+                        android:inputType="textPersonName|textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="4dp"
+                        android:textCursorDrawable="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView106"
+                        app:layout_constraintStart_toEndOf="@+id/textView106"
+                        app:layout_constraintTop_toTopOf="@+id/textView106" />
+
+                    <TextView
+                        android:id="@+id/textView112"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Address:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/places_dark_brown"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edt_max_price_explore_add"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/places_white"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="4dp"
+                        android:textCursorDrawable="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/edt_min_price_explore_add"
+                        app:layout_constraintStart_toEndOf="@+id/textView114"
+                        app:layout_constraintTop_toTopOf="@+id/edt_min_price_explore_add"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <View
+                        android:id="@+id/divider36"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/colourFive_divider"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView100"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Contact:"
+                        android:textAlignment="textEnd"
+                        app:layout_constraintStart_toStartOf="@+id/textView106"
+                        app:layout_constraintTop_toBottomOf="@+id/textView106" />
+
+                    <EditText
+                        android:id="@+id/edt_contact_explore_add"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/places_white"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="4dp"
+                        android:textCursorDrawable="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView100"
+                        app:layout_constraintStart_toEndOf="@+id/textView100"
+                        app:layout_constraintTop_toTopOf="@+id/textView100" />
+
+                    <TextView
+                        android:id="@+id/textView101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="@+id/edt_min_price_explore_add"
+                        app:layout_constraintStart_toStartOf="@+id/edt_min_price_explore_add"
+                        app:layout_constraintTop_toBottomOf="@+id/edt_min_price_explore_add" />
+
+                    <TextView
+                        android:id="@+id/textView109"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Max"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="@+id/edt_max_price_explore_add"
+                        app:layout_constraintStart_toStartOf="@+id/edt_max_price_explore_add"
+                        app:layout_constraintTop_toBottomOf="@+id/edt_max_price_explore_add" />
+
+                    <TextView
+                        android:id="@+id/textView116"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Email (Optional):"
+                        android:textAlignment="textEnd"
+                        app:layout_constraintStart_toStartOf="@+id/textView100"
+                        app:layout_constraintTop_toBottomOf="@+id/textView100" />
+
+                    <TextView
+                        android:id="@+id/textView117"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Website (Optional):"
+                        app:layout_constraintStart_toStartOf="@+id/textView116"
+                        app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+                    <EditText
+                        android:id="@+id/edt_email_explore_add"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/places_white"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="4dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView116"
+                        app:layout_constraintStart_toEndOf="@+id/textView116"
+                        app:layout_constraintTop_toTopOf="@+id/textView116" />
+
+                    <EditText
+                        android:id="@+id/edt_website_explore_add"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/places_white"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="4dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView117"
+                        app:layout_constraintStart_toEndOf="@+id/textView117"
+                        app:layout_constraintTop_toTopOf="@+id/textView117" />
+
+                    <RadioGroup
+                        android:id="@+id/group_delivery_explore_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/a_constraint_background_drawable"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        app:layout_constraintStart_toStartOf="@+id/textView108"
+                        app:layout_constraintTop_toBottomOf="@+id/textView108">
+
+                        <RadioButton
+                            android:id="@+id/radio_offers_delivery_explore_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/findme"
+                            android:text="Offers Delivery"
+                            android:textColor="@color/findme" />
+
+                        <RadioButton
+                            android:id="@+id/radio_no_delivery_explore_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/findme"
+                            android:text="No Delivery"
+                            android:textColor="@color/findme" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+            <View
+                android:id="@+id/divider34"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/findme"
+                app:layout_constraintBottom_toBottomOf="@+id/textView105"
+                app:layout_constraintEnd_toEndOf="@+id/textView105"
+                app:layout_constraintStart_toStartOf="@+id/textView105" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_police_name_police_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="16dp"
+            android:text="Station Name"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_time_police_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="00:00"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/divider9"
+            app:layout_constraintStart_toStartOf="@+id/divider9"
+            app:layout_constraintTop_toBottomOf="@+id/txt_police_name_police_list" />
+
+        <TextView
+            android:id="@+id/txt_distance_police_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00 Kms"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_time_police_list"
+            app:layout_constraintEnd_toEndOf="@+id/divider8"
+            app:layout_constraintStart_toStartOf="@+id/divider8" />
+
+        <TextView
+            android:id="@+id/txt_police_contact_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_latitude_police_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_police_contact_list" />
+
+        <TextView
+            android:id="@+id/txt_longitude_police_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_latitude_police_list" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/b_call_icon_background"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_call_white_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/transparent_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_more_vert_blue_light_24dp" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="75dp"
+            android:layout_height="7dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/faded_blue_bottom"
+            app:layout_constraintStart_toEndOf="@+id/divider9"
+            app:layout_constraintTop_toBottomOf="@+id/txt_distance_police_list" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="75dp"
+            android:layout_height="7dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/faded_blue_bottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_time_police_list" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="45dp"
+        android:background="@color/faded_black_light"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout21"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout21"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout21" />
+</androidx.constraintlayout.widget.ConstraintLayout>
